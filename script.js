@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //const button = document.getElementById("btn");
 
     let newDiv = document.createElement("div");
-    newDiv.className = "header-container";
+    newDiv.classList.add("header-container");
     let h1 = document.createElement("h1");
     let node = document.createTextNode("This is an h1");
     h1.addEventListener("dblclick", function () {
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     h1.appendChild(node);
     newDiv.appendChild(h1)
     document.body.appendChild(newDiv);
-    h1.className = "h1";
+    h1.classList.add("h1");
 
 
     let h2 = document.createElement("h2");
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     h2.appendChild(nodeTwo);
     newDiv.appendChild(h2)
-    h2.className = "h2";
+    h2.classList.add("h2");
 
 
     let h3 = document.createElement("h3");
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     h3.appendChild(nodeThree);
     newDiv.appendChild(h3)
-    h3.className = "h3";
+    h3.classList.add("h3");
 
 
     let h4 = document.createElement("h4");
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     h4.appendChild(nodeFour);
     newDiv.appendChild(h4)
-    h4.className = "h4";
+    h4.classList.add("h4");
 
 
     let h5 = document.createElement("h5");
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     h5.appendChild(nodeFive);
     newDiv.appendChild(h5)
-    h5.className = "h5";
+    h5.classList.add("h5");
 
 
     let h6 = document.createElement("h6");
@@ -68,6 +68,34 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     h6.appendChild(nodeSix);
     newDiv.appendChild(h6)
-    h6.className = "h6";
+    h6.classList.add("h6");
 })
 
+
+
+// //step 11
+// function insertList () {
+//     let liNode = document.createElement("LI");    
+//     var textNode = document.createTextNode(`Thi.s is list item ${1}`);
+//     liNode.appendChild(textNode);
+//    //number incremented by 1
+// }
+
+// //step 12
+// document.getElementById("btn").addEventListener("click", function () {
+//     insertList();
+// }) 
+
+//step 13
+//Using the same random color function created above, apply an event listener that when a list item is clicked once, 
+//it changes the color of the font to one fo the 8 random colors.
+
+
+
+//step 14
+// function removeListItem (element) {
+//     element.addEventListner("dblclick", function () {
+//        document.body.removeChild(element);
+//     });
+// }
+//removeListItem(listitem);
