@@ -3,7 +3,7 @@
 Objective
 The objective of this assignment is to practice the basics of vanilla JavaScript DOM manipulation. DOM manipulation takes time and practice to fully grasp, go through the following tasks to practice.
 
-Tasks
+Tasks: 
 Create an index.html file, styles.css file, and a scripts.js file.
 Link the styles to index.html and link the scripts in the HEAD of the index.html, not in the body.
 In the scripts.js file, using DOM manipulation, create a div with a class named "header-container".
