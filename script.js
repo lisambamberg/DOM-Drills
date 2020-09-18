@@ -71,6 +71,9 @@ document.addEventListener("DOMContentLoaded", function () {
         li.addEventListener("click", function () {
             changeFontColor(li)
         });
+        li.addEventListener("dblclick", function () {
+            document.body.removeChild(li);
+        })
         li.appendChild(liTextNode);
         document.body.appendChild(li);
         liNumber++;
