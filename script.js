@@ -68,6 +68,9 @@ document.addEventListener("DOMContentLoaded", function () {
     function createNewListItem() {
         let li = document.createElement("li");
         let liTextNode = document.createTextNode("This is a list item" + liNumber)
+        li.addEventListener("click", function () {
+            changeFontColor(li)
+        });
         li.appendChild(liTextNode);
         document.body.appendChild(li);
         liNumber++;
